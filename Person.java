@@ -1,27 +1,42 @@
 public class Person {
-
-    private String name;
-    private String age;
-    private String cnic;
-    private String cellNum;
-
-    public Person(String name, String age, String cnic, String cellNum) {
-        this.name = name;
-        this.age = age;
-        this.cnic = cnic;
-        this.cellNum = cellNum;
-    }
-    public String getCellNum() {
-        return cellNum;
-    }
-
-    public void setCellNum(String cellNum) {
-        this.cellNum = cellNum;
-    }
-
-
-    public void display_info(){
-        System.out.printf("Name: %s Age: %s CNIC Number: %s Cell Number: %s",name, age, cnic, cellNum);
-    }
     
+    
+
+    private String firstName;
+    private String lastName;
+    private Date dob;
+
+    public Person(String firstName, String lastName, Date dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = dob;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastname() {
+        return lastName;
+    }
+
+    public void setLastname(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Date getDob() {
+        return dob;
+    }
+
+    public void setDob(Date dob) {
+        this.dob = dob;
+    }
+
+    public String toString() {
+        return "Person [firstName=" + firstName + ", lastName=" + lastName + ", dob=" + dob + "]";
+    }
 }
