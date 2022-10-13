@@ -13,8 +13,10 @@ public class Driver {
 
     public static void displayList(Person list[]){
            for(int i = 0; i < list.length;i++){
-                System.out.println("Name: "+list[i].getFirstName()+" "+list[i].getLastname()+"    "+
-                "Date of Birth: "+list[i].getDob());
+                if(list[i]!= null){
+                    System.out.println("Name: "+list[i].getFirstName()+" "+list[i].getLastname()+"    "+
+                    "Date of Birth: "+list[i].getDob());
+                }  
            } 
     }
 
